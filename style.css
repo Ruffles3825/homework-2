@@ -1,0 +1,134 @@
+:root {
+    --primary: rgb(17, 53, 100);
+    --secondary: rgb(238, 145, 160);
+    --font-color: rgb(224, 224, 224);
+
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    max-height: 15%;
+}
+
+header img {
+    max-height: 15%;
+}
+
+nav ul {
+    display:flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 5px;
+    color:rgb(224, 224, 224)
+}
+
+li {
+    padding: 5px
+}
+
+a:link {
+    color: turquoise;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: var(--secondary);
+    background-color: transparent;
+    text-decoration: none;
+}
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+body {
+    font-family: 'Montserrat', Georgia, 'Times New Roman', Times, serif;
+    color: var(--font-color);
+    background-color: var(--primary);
+}    
+
+.my-projects {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    row-gap: 15px;
+    column-gap: 5px;
+}
+
+.item-a {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.item-b {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3; 
+}
+
+.item-c {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3; 
+}
+
+.item-d {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3; 
+}
+.cards {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: auto;
+    min-height: 15%;
+}
+
+.cards:hover {
+    box-shadow: 0 8px 16px 0 rgba(201, 201, 201, 0.925);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+main {
+    max-height: 700px;
+}
+footer {
+    display: flex;
+    max-height: 10%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%; 
+    border-top: 1px solid var(--secondary);
+}
+
+@media screen and (max-width: 790px) {
+    header {
+      flex-direction: column;
+    }
+  
+    main {
+      max-width: 1200px;
+    }
+    footer {
+      flex-direction: column;
+      padding: 3%
+    }
+  }
+  
