@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>High Scores</title>
+  <link rel="stylesheet" href="./Assets/reset.css" />
+  <link rel="stylesheet" href="./Assets/high-score.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c7c1f15e2f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <main>
+    <h1 id="final-score">420</h1>
+    <form id="end-of-quiz">
+      <h2>Enter your initials below to solidify your glory!</h2>
+      <input type="text" name="name" id="username" placeholder="Enter your initials">
+      <button id="save-score" type="submit" onclick="saveHighScore(event)">Save</button>
+    </form>
+    <div id="other-options">
+      <button id="play-again" onclick="window.location.href = 'game.html';">Play Again!</button>
+      <button id="home" onclick="window.location.href = 'index.html';">Return Home</button>
+    </div>  
+  </main>
+</body>

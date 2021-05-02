@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="./reset.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  </head>
+  <header>
+      <h1>Weather Dashboard</h1>
+  </header>
+  <body>
+    <div class="modal-body">
+        <div class="container-fluid">
+            <div class="row">
+                <form id="city-search" class="col-4">
+                    <p class="search-city">Search for a City:</p>
+                    <div class="form-inline">
+                        <input type="text" class="form-control" id="cityInput">
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                    </div>
+                </form>
+                <div id="todays-weather" class="col">
+                    <p class="temp">Temperature: </p>
+                    <p class="humid">Humidity: </p>
+                    <p class="wind">Wind Speed: </p>
+                    <p class="uv">UV Index</p>
+                </div>
+                <div id="five-day-forecast" class="col-8 ml-auto">
+
+                </div>
+            </div>    
+        </div>    
+    </div>    
+  </body>
+</html>  
